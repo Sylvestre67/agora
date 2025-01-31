@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  agora:
+    build:
+      context: .
+    ports:
+      - "80:80"
+    env_file:
+      - .env
+    volumes:
+      - .:/app
